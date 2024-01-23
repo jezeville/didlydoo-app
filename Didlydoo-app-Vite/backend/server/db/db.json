@@ -1,5 +1,57 @@
 [
   {
+    "id": "460fefc37b98",
+    "name": "Party for my 18 years",
+    "author": "Jeremy Frédéric",
+    "description": "Super party for my birthday",
+    "dates": [
+      "2024-02-22",
+      "2024-02-23"
+    ],
+    "created_at": "2024-01-23T10:53:43.760Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-23T10:53:43.760Z",
+    "attendees": []
+  },
+  {
+    "id": "3bb5d56d234f",
+    "name": "Soirée chez Ugur",
+    "author": "Ugur F",
+    "description": "Super annif pour une soirée chez Ugur",
+    "dates": [
+      "2024-02-22",
+      "2024-02-23"
+    ],
+    "created_at": "2024-01-23T09:51:38.025Z",
+    "num_modification": 1,
+    "last_modification": "2024-01-23T11:10:55.519Z",
+    "attendees": [
+      {
+        "name": "Ugur F",
+        "dates": [
+          {
+            "date": "2024-02-22",
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a4948dac8610",
+    "name": "Party for my 18 years",
+    "author": "Jeremy Frédéric",
+    "description": "Super party for my birthday",
+    "dates": [
+      "2024-02-22",
+      "2024-02-23"
+    ],
+    "created_at": "2024-01-23T09:45:54.124Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-23T09:45:54.124Z",
+    "attendees": []
+  },
+  {
     "id": "f5b6564b5dc4",
     "name": "My sweet 16",
     "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
