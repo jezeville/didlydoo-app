@@ -1,19 +1,5 @@
 [
   {
-    "id": "460fefc37b98",
-    "name": "Party for my 18 years",
-    "author": "Jeremy Frédéric",
-    "description": "Super party for my birthday",
-    "dates": [
-      "2024-02-22",
-      "2024-02-23"
-    ],
-    "created_at": "2024-01-23T10:53:43.760Z",
-    "num_modification": 0,
-    "last_modification": "2024-01-23T10:53:43.760Z",
-    "attendees": []
-  },
-  {
     "id": "3bb5d56d234f",
     "name": "Soirée chez Ugur",
     "author": "Ugur F",
