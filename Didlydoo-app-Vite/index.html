@@ -27,22 +27,22 @@
     <form class="form">
         <!-- Event name -->
         <div>
-            <input name="name" type="text" class="form_author" id="#" placeholder="Author" minlength="3" maxlength="256"
-                required>
-            <input name="name" type="text" class="form_name" id="#" placeholder="Event name" minlength="3"
+            <input name="name" type="text" class="form_author" id="author" placeholder="Author" minlength="3"
+                maxlength="256" required>
+            <input name="name" type="text" class="form_name" id="name" placeholder="Event name" minlength="3"
                 maxlength="256" required>
         </div>
 
         <!-- Description -->
         <div>
-            <textarea name="description" type="text" class="form_desc" id="#" placeholder="Description" minlength="5"
-                maxlength="1024"></textarea>
+            <textarea name="description" type="text" class="form_desc" id="description" placeholder="Description"
+                minlength="5" maxlength="1024"></textarea>
         </div>
 
         <!-- Date & button Submit -->
         <div>
-            <input name="date" type="date" class="form_date" id="#">
-            <button class="form_btnSubmit" id="#" type="submit">Submit</button>
+            <input name="date" type="date" class="form_date" id="date">
+            <button class="form_btnSubmit" id="confirmation" type="submit">Submit</button>
         </div>
 
     </form>
@@ -150,11 +150,6 @@
 
 
 
-    <!-- === -->
-    <!-- <button id="createEvent">Créer un évènement</button>
-    <button id="addAvailability+">V</button>
-    <button id="addAvailability-">X</button>
-    <button id="editEvent">Edit</button> -->
 
     <script src="script/popup.js" defer></script>
 </body>
