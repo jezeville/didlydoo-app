@@ -1,11 +1,14 @@
 var card_btnTab = document.getElementById('card_btnTab');
-let header = document.querySelector('header');
+let divTab = document.querySelector('header');
 
-function popup() {
+export function popup() {
+    console.log("coucou");
     var htmlContent = `
     <div class="overlay"></div>
+
             <section class="popup">
                 <h2>Presence list</h2>
+                <button class="popup_closeBtn">X</button>
                 <h3>L'anniversaire de Jeremy</h3>
 
                     <table>
@@ -28,22 +31,25 @@ function popup() {
                     </table>
 
             </section>
-       
+     
     `;
 
-    divTab.innerHTML = htmlContent;
+    header.innerHTML = htmlContent;
+    closeForm();
     return htmlContent;
 }
 
-// // Attacher le gestionnaire d'événements de clic au bouton
-// newTaskBtn.addEventListener('click', formulaire);
+// Attacher le gestionnaire d'événements de clic au bouton
+card_btnTab.addEventListener('click', popup);
 
-// // fermer le formulaire
-// function closeFormulaire() {
-//     var fCloseBtn = document.getElementById('fCloseBtn');
-//     if (fCloseBtn) {
-//         fCloseBtn.addEventListener('click', function () {
-//             divTaskForm.innerHTML = '<h1>My Planner</h1>'; // Effacer le contenu du conteneur (on replace juste le titre)
-//         });
-//     }
-// }
+// fermer le formulaire
+function closeForm() {
+    var popup_closeBtn = document.getElementById('popup_closeBtn');
+    if (popup_closeBtn) {
+        popup_closeBtn.addEventListener('click', function () {
+            divTab.innerHTML = '<h1>My Planner</h1>'; // Effacer le contenu du conteneur (on replace juste le titre)
+        });
+    }
+}
+
+console.log("OK");
