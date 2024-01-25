@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <title>Didlydoo</title>
     <script src="script/script.js" defer type="module"></script>
 </head>
+
 <body>
 
     <header>
@@ -24,20 +27,22 @@
     <form class="form">
         <!-- Event name -->
         <div>
-            <input name="name" type="text" class="form_author" id="#" placeholder="Author" minlength="3" maxlength="256" required>
-            <input name="name" type="text" class="form_name" id="#" placeholder="Event name" minlength="3" maxlength="256" required>
+            <input name="name" type="text" class="form_author" id="author" placeholder="Author" minlength="3"
+                maxlength="256" required>
+            <input name="name" type="text" class="form_name" id="name" placeholder="Event name" minlength="3"
+                maxlength="256" required>
         </div>
 
         <!-- Description -->
         <div>
-            <textarea name="description" type="text" class="form_desc" id="#" placeholder="Description" minlength="5"
-            maxlength="1024"></textarea>
+            <textarea name="description" type="text" class="form_desc" id="description" placeholder="Description"
+                minlength="5" maxlength="1024"></textarea>
         </div>
 
         <!-- Date & button Submit -->
         <div>
-            <input name="date" type="date" class="form_date" id="#">
-            <button class="form_btnSubmit" id="#" type="submit">Submit</button>
+            <input name="date" type="date" class="form_date" id="date">
+            <button class="form_btnSubmit" id="confirmation" type="submit">Submit</button>
         </div>
 
     </form>
@@ -46,24 +51,17 @@
     <div class="divTab"><!-- === --></div>
 
     <main>
-    
 
 
-    
+
+
+
     </main>
 
-
-
     <div class="divTab"><!-- === --></div>
-        
- 
 
-    <!-- === -->
-    <!-- <button id="createEvent">Créer un évènement</button>
-    <button id="addAvailability+">V</button>
-    <button id="addAvailability-">X</button>
-    <button id="editEvent">Edit</button> -->
 
     <script src="script/popup.js" defer></script>
 </body>
+
 </html>

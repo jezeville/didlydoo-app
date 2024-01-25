@@ -1,8 +1,4 @@
-export async function deleteEvent() {
-    //element à automatiser par après
-        let id = "460fefc37b98";
-     //fin des elements     
-
+export async function deleteEvent(id) {
     await fetch(`http://localhost:3000/api/events/${id}/`, {
         method: "DELETE"
     })
