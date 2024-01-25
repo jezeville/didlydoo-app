@@ -1,55 +1,48 @@
-var card_btnTab = document.getElementById('card_btnTab');
-let divTab = document.querySelector('header');
 
-export function popup() {
-    console.log("coucou");
-    var htmlContent = `
-    <div class="overlay"></div>
-
-            <section class="popup">
-                <h2>Presence list</h2>
-                <button class="popup_closeBtn">X</button>
-                <h3>L'anniversaire de Jeremy</h3>
-
-                    <table>
-                        <tr>
-                            <td>Cellule 1,1</td>
-                            <td>Cellule 1,2</td>
-                            <td>Cellule 1,3</td>
-                
-                        </tr>
-                        <tr>
-                            <td>Cellule 2,1</td>
-                            <td>Cellule 2,2</td>
-                            <td>Cellule 2,3</td>    
-                        </tr>
-                        <tr>
-                            <td>Cellule 3,1</td>
-                            <td>Cellule 3,2</td>
-                            <td>Cellule 3,3</td>
-                        </tr>
-                    </table>
-
-            </section>
-     
-    `;
-
-    header.innerHTML = htmlContent;
-    closeForm();
-    return htmlContent;
+let popupSupp = () =>{
+    let section = document.querySelector('.overlay');
+    section.remove();
 }
 
-// Attacher le gestionnaire d'événements de clic au bouton
-card_btnTab.addEventListener('click', popup);
-
-// fermer le formulaire
-function closeForm() {
-    var popup_closeBtn = document.getElementById('popup_closeBtn');
-    if (popup_closeBtn) {
-        popup_closeBtn.addEventListener('click', function () {
-            divTab.innerHTML = '<h1>My Planner</h1>'; // Effacer le contenu du conteneur (on replace juste le titre)
-        });
+export let popupPresence = (identite , tableau) =>{
+    for (let elem of tableau){
+        if(elem.id == identite){
+            let div = document.createElement('div');
+            div.className = "overlay";
+            div.innerHTML = `
+            <section class="popup">
+            <h2 class="popup_title">Presence list</h2>
+            <button class="popup_closeBtn">X</button>
+            <h3 class="popup_titleCard">${elem.name}</h3>
+        
+           
+            <div class="popup_box-presence">
+                <table class="popup_box-presence-tab">
+                    <tr>
+                        <td class="popup_box-presence-tab-name"></td>
+                        <td>Cellule 1,2</td>
+                        <td>Cellule 1,3</td>
+        
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="popup_footer">
+                <table class="popup_footer-tab">
+                    <tr>
+                        <td><input name="name" type="text" class="popup_box-presence-tab-name" id="#" placeholder="Author"></td>
+                        <td><button>V</button><button>X</button></td>
+                    </tr>
+                </table>
+            </div>
+            </section>`;
+            let divContainer = document.querySelector('.divTab');
+            divContainer.append(div);
+            let btnSupp = document.querySelector('.popup_closeBtn');
+            btnSupp.addEventListener('click',popupSupp);
+            }   
     }
 }
 
-console.log("OK");
+
+

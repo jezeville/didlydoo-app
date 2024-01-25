@@ -93,23 +93,34 @@ h1{
             margin-left: 1%;
             margin-top: 0.5%;
         }
-
-        &_date{
-            border: none;
-            background-color: #F2F2F2;
+        .sectionDate{
             width: 57%;
-            height: 30px;
             margin-left: 1%;
             margin-top: 0.5%;
             margin-bottom: 0.5%;
-
+        }
+        &_date{
+            border: none;
+            background-color: #F2F2F2;
+            height: 30px;
+            width : 100%;
+        }
+        &_btnAdd{
+            border: none;
+            background-color: #222222;
+            color: white;
+            margin-left: 1%;
+            margin-top: 0.5%;
+            margin-bottom: 1%;
+            font-size: 20px;
+            letter-spacing: 2px;
         }
 
         &_btnSubmit{
             border: none;
             background-color: #222222;
             color: white;
-            width: 39%;
+            width: 35%;
             height: 30px;
             margin-left: 1%;
             margin-top: 0.5%;

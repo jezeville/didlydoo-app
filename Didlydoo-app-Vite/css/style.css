@@ -76,20 +76,33 @@ h1 {
   margin-left: 1%;
   margin-top: 0.5%;
 }
-.form_date {
-  border: none;
-  background-color: #F2F2F2;
+.form .sectionDate {
   width: 57%;
-  height: 30px;
   margin-left: 1%;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
+}
+.form_date {
+  border: none;
+  background-color: #F2F2F2;
+  height: 30px;
+  width: 100%;
+}
+.form_btnAdd {
+  border: none;
+  background-color: #222222;
+  color: white;
+  margin-left: 1%;
+  margin-top: 0.5%;
+  margin-bottom: 1%;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 .form_btnSubmit {
   border: none;
   background-color: #222222;
   color: white;
-  width: 39%;
+  width: 35%;
   height: 30px;
   margin-left: 1%;
   margin-top: 0.5%;
