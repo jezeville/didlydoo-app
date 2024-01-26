@@ -1,15 +1,10 @@
-export let addAvailability = async (valeur) =>{
+export let addAvailability = async (id , tab) =>{
         
-     //element à automatiser par après
-    let name = "Ugur F";
-    let dates = [{ "date" : '2024-02-22', available : valeur}];
-    let id = "3bb5d56d234f";
-     //fin des elements 
-
+    let name = document.getElementById('addName').value;
      let objectData = {
         name : name, 
-        dates : dates
-    };
+        dates : tab
+        };
     let response = await fetch (`http://localhost:3000/api/events/${id}/attend`,{
         method : "POST",
         headers: {

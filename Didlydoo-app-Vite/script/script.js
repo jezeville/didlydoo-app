@@ -1,6 +1,6 @@
 import { allEvents } from "./allEvents.js";
 import { createEvents } from "./createEvents.js";
-import { addAvailability } from "./addAvailability.js";
+
 import { editEvent } from "./editEvent.js";
 import { deleteEvent } from "./deleteEvents.js";
 import { popupPresence } from "./popup.js";
