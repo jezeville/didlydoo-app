@@ -1,7 +1,7 @@
 # Didlydoo
 
 ## Introduction
-Bienvenue sur le repository de mon projet Didlydoo. Vous pouvez également visiter la GitHub Page pour une démo en direct.
+Bienvenue sur le repository de mon projet Didlydoo.
 Ce travail était en collaboration avec [Ugur](https://github.com/Ugur-F).
 
 ## À Propos
