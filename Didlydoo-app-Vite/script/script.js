@@ -1,11 +1,20 @@
 import { allEvents } from "./allEvents.js";
 import { createEvents } from "./createEvents.js";
-import { addAvailability } from "./addAvailability.js";
+
 import { editEvent } from "./editEvent.js";
 import { deleteEvent } from "./deleteEvents.js";
 import { popupEdit } from "./popupEdit.js";
+import { popupPresence } from "./popup.js";
 
-
+//Ajout de date 
+let btnAdd = document.getElementById('addDate');
+btnAdd.addEventListener('click',()=>{
+    let sectionDate = document.querySelector('.sectionDate');
+    let input = document.createElement('input');
+    input.type = "date";
+    input.className = "form_date";
+    sectionDate.append(input);
+})
 
 
 let elementCreator = (tableau) =>{
@@ -43,12 +52,15 @@ let createNew = async() =>{
         let author = document.getElementById('author').value;
         let name = document.getElementById('name').value;
         let description = document.getElementById('description').value;
-        let date = [document.getElementById('date').value];
+        let dateNodes = document.querySelectorAll('.form_date');
+        let date = Array.from(dateNodes).map(dateNode => dateNode.value);
         await createEvents(author , name , description , date);
 }
 
 document.getElementById('confirmation').addEventListener('click', createNew);
 
+
+// suppression
 let deleteEvenement = async(id) =>{
     deleteEvent(id);
     let div = document.getElementById(id);
@@ -65,4 +77,10 @@ let btnEdit = document.querySelectorAll('.card_header_btnEdit');
 for (let elem of btnEdit){
     let id = elem.parentElement.parentElement.id;
     elem.addEventListener('click', () => popupEdit(id, tableau));
+}
+//Popup de présence
+let buttonPresence = document.querySelectorAll('.card_btnTab');
+for (let elem of buttonPresence){
+    let id = elem.parentElement.id;
+    elem.addEventListener('click', () => popupPresence(id , tableau));
 }

@@ -13,6 +13,4 @@ export let createEvents = async(author , name , description , date) =>{
             },
             body: JSON.stringify(objectData),
         });
-        let tableau = await response.json();
-        console.log(tableau);
 }
