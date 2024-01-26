@@ -1,11 +1,14 @@
-export let editEvent = async() =>{
+export let editEvent = async(id) =>{
 
     //element à automatiser par après
-    let name = "Soirée chez Ugur";
-    let author = "Ugur F";
-    let description = "Super annif pour une soirée chez Ugur";
-    let id = '3bb5d56d234f';
+    let name = document.querySelector('.form_edit-name').value;
+    let author = document.querySelector('.form_edit-author').value;
+    let description = document.querySelector('.form_edit-desc').value;
     //fin des elements 
+
+    console.log(name);
+    console.log(author);
+    console.log(description);
 
     let objectData = {};
     if (name){objectData.name = name}

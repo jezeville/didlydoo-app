@@ -3,6 +3,7 @@ import { createEvents } from "./createEvents.js";
 import { addAvailability } from "./addAvailability.js";
 import { editEvent } from "./editEvent.js";
 import { deleteEvent } from "./deleteEvents.js";
+import { popupEdit } from "./popupEdit.js";
 
 
 
@@ -57,4 +58,11 @@ let buttonSupp = document.querySelectorAll('.card_header_btnDelete');
 for (let elem of buttonSupp){
     let id = elem.parentElement.parentElement.id;
     elem.addEventListener('click', () => deleteEvenement(id));
+}
+
+// Popup Edit
+let btnEdit = document.querySelectorAll('.card_header_btnEdit');
+for (let elem of btnEdit){
+    let id = elem.parentElement.parentElement.id;
+    elem.addEventListener('click', () => popupEdit(id, tableau));
 }
