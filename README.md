@@ -10,6 +10,9 @@ Cette application s'inspire de l'utilisation originale de l'application "DidlyDo
 ## Difficultés Rencontrées
 L'une des principales complexités de ce projet a été l'utilisation d'une API locale car c'était la première fois que je manipulais une API en locale. La gestion des requêtes asynchrones, la manipulation des données et la coordination entre le frontend et le backend ont été des défis particuliers.
 
+## Photo de l'application
+
+
 ## Collaboration
 N'hésitez pas à jeter un coup d'œil à mon profil GitHub jezeville pour explorer d'autres projets et contributions.
 
